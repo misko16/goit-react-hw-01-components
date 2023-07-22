@@ -1,6 +1,4 @@
 import React from 'react';
-import { upload } from '@testing-library/user-event/dist/upload';
-
 
 //---------FIRST_EXERCISE
 import user from './components/data/user.json';
@@ -34,7 +32,7 @@ export const App = () => {
     <FriendsList friends={friendsData} /> 
 
     <TransactionHistory items={transactions}/>
-    
+
     </div>
   );
 };

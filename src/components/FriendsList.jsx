@@ -1,5 +1,4 @@
 import React from 'react';
-import Friends from "./data/friends.json";
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <li className="friend-item">
