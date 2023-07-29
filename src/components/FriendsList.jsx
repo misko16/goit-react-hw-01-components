@@ -24,7 +24,7 @@ const FriendsList = ({ friends }) => (
   </ul>
 );
 
-FriendListItem.propTypes = {
+FriendsList.propTypes = {
 friends: PropTypes.arrayOf(
   PropTypes.shape({
     id: PropTypes.number.isRequired,
