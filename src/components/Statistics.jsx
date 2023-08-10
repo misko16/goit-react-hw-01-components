@@ -14,12 +14,16 @@ const Statistics = ({title, stats}) => {
     </ul>
   </section>
  );
- Statistics.propTypes = {
+      };
+Statistics.propTypes = {
   title: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  }).isRequired,
- }
-}
-export default Statistics;
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};
+
+export default Statistics
